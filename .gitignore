@@ -1,0 +1,17 @@
+# Synthea generated data (too big for GitHub)
+synthea/output/
+synthea/*.jar
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
