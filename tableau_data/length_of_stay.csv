@@ -1,0 +1,5 @@
+service_line,total_stays,avg_los_days,median_los_days,avg_cost_per_stay
+emergency,2673,0.24,0.04,4283.66
+hospice,108,19.89,23.43,13966.65
+inpatient,824,4.19,2.14,23926.92
+snf,148,20.06,15.51,21094.26

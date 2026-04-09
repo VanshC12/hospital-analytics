@@ -1,0 +1,11 @@
+service_line,encounters,avg_hours,avg_cost
+hospice,108,477.37,13966.65
+ambulatory,30751,1.72,4798.28
+virtual,163,0.58,2586.53
+outpatient,7868,0.59,1910.37
+emergency,2673,5.64,4283.66
+urgentcare,2171,0.60,1591.59
+wellness,13009,0.99,1370.72
+snf,148,481.39,21094.26
+inpatient,824,100.65,23926.92
+home,408,0.25,905.55

@@ -1,0 +1,48 @@
+{
+  "model_type": "XGBoost Classifier",
+  "task": "Binary classification: Long Stay (>7 days) vs Normal Stay",
+  "training_date": "2026-04-09",
+  "training_samples": 661,
+  "test_samples": 166,
+  "class_balance": "17.78% positive class",
+  "features": [
+    "age_at_admission",
+    "admission_year",
+    "admission_month",
+    "admission_dow",
+    "prior_admissions_1yr",
+    "days_since_last_admission",
+    "num_conditions",
+    "num_active_meds",
+    "ed_visits_6mo"
+  ],
+  "overall_metrics": {
+    "auc": 0.7188725490196078,
+    "precision": 0.32558139534883723,
+    "recall": 0.4666666666666667,
+    "f1": 0.3835616438356164
+  },
+  "top_features_by_shap": [
+    "num_conditions",
+    "age_at_admission",
+    "admission_year",
+    "days_since_last_admission",
+    "admission_month"
+  ],
+  "fairness_audit_findings": {
+    "hispanic_nonhispanic_auc_gap": 0.1347,
+    "female_male_recall_gap": 0.2054,
+    "native_subgroup_failure": "AUC 0.375, precision/recall both 0",
+    "interpretation": "Model shows concerning disparities that would block clinical deployment under ONC HTI-1. Findings are partially driven by small test set sizes and should be validated with bootstrap confidence intervals in a production workflow.",
+    "suppressed_subgroups": [
+      "hawaiian (n=2)",
+      "other (n=6)"
+    ]
+  },
+  "known_limitations": [
+    "Synthetic Synthea data \u2014 not real clinical signal",
+    "Small test set (166) limits subgroup analysis reliability",
+    "No risk adjustment (HCC/Elixhauser) implemented",
+    "admission_year feature shows Synthea temporal artifacts"
+  ]
+}

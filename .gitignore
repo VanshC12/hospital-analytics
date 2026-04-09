@@ -8,6 +8,21 @@ __pycache__/
 venv/
 .venv/
 
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Tableau temp/lock files
+*.twbr
+.~*
+
+# R history (unused)
+*.Rhistory
+.Rhistory
+
+# Bulky intermediate data (too big, can be regenerated)
+tableau_data/encounters.csv
+tableau_data/patients.csv
+
 # OS
 .DS_Store
 Thumbs.db
